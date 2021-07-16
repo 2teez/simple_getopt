@@ -28,7 +28,7 @@ use simple_getopt::Getopt;
 1. flag/switches without an attached values. These are seen as a `boolean` values.
 2. options that has values attached. These can be used as HashMap regular key/value.
 
-It should be emphasised that `simple_getopt` job is to parse (i.e break up nicely) options given from the CLI and allow the user focus on how to use these without cumberasome formatting. 
+It should be emphasised that `simple_getopt` job is to parse (i.e break up nicely) options given from the CLI and allow the user focus on how to use these without cumberasome formatting. The returned options are `READ-ONLY`. So there are no suprises since the user or the program cannot modify the options given from the CLI.
 
 ## Example
 ```
@@ -139,7 +139,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
 
 
 ### Limitation by Design  
-Since simplicity is the core of this crate design the following design options are followed:
+Since simplicity is the core of this crate design, the following design options are followed:
 
 1. The flags or switches are single lettered and uses a single dash like so: `-a` `-b` `-c`. The user cannot use double dashes or more than one letter as flags. i.e `--file` not allowed.
 
