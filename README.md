@@ -33,7 +33,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
 ## Example
 ```
         use getopt::Getopt;
-        use std::env
+        use std::env;
         ...
 ```
 ```
@@ -59,7 +59,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
 ```
 ```
     use getopt::Getopt;
-    use std::env
+    use std::env;
     use std::fs::File;
     use std::io::{BufRead, BufReader};
     ...
@@ -78,7 +78,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
 ```
 ```
     use getopt::Getopt;
-    use std::env
+    use std::env;
     ...
     let parse = Getopt::std(&env::args().collect::<Vec<_>>()); // parsing done.
 
