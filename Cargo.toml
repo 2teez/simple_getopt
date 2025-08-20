@@ -1,9 +1,21 @@
 [package]
 name = "simple_getopt"
 version = "0.2.0"
+authors = ["timothy adigun <2teezrust@gmail.com>"]
+description = "Parse options on command line by breaking up each of the options for easy usage."
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/2teez/simple_getopt"
+documentation = "https://github.com/2teez/simple_getopt"
+keywords = ["cli", "getopt", "argument-parsing", "parser", "utilities"]
+categories = [
+    "command-line-interface",
+    "command-line-utilities",
+    "Configuration",
+    "development-tools::debugging",
+    "parsing",
+]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 arraylist = "0.2.0"
