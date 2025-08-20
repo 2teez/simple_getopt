@@ -9,7 +9,7 @@
 In the Cargo.toml file
 
     [dependancies]
-    simple_getopt = "0.2.0"
+    simple_getopt = "0.2.1"
 
 In the main.rs file
 
