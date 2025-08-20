@@ -2,7 +2,7 @@
 
 ## Name
 
-`simple_getopt` -- Yet Another Getopt Parse Command Options Utility But Easy And Simple - (YAGPCUBEAS).
+`simple_getopt` -- Yet Another Getopt Parse Command Options Utility But Easy And Simple - (YAGP).
 
 ## Installation
 
