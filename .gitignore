@@ -1,0 +1,9 @@
+checklist.txt
+.DS_Store
+*/target
+*/*/target
+*/*/target
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+target
