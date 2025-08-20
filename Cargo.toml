@@ -1,6 +1,6 @@
 [package]
 name = "simple_getopt"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["timothy adigun <2teezrust@gmail.com>"]
 description = "A simple, getopt-style command-line argument parser for Rust. - (YAGP)."
 readme = "README.md"
