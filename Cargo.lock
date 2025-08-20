@@ -10,7 +10,7 @@ checksum = "e9e6d10b45a304cd370ca93f4df90004370bbceea9a484a372c1d6c895955ae6"
 
 [[package]]
 name = "simple_getopt"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "arraylist",
 ]
