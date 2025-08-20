@@ -2,7 +2,7 @@
 name = "simple_getopt"
 version = "0.2.0"
 authors = ["timothy adigun <2teezrust@gmail.com>"]
-description = "Parse options on command line by breaking up each of the options for easy usage."
+description = "A simple, getopt-style command-line argument parser for Rust. - (YAGP)."
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/2teez/simple_getopt"
