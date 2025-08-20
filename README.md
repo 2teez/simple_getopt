@@ -9,7 +9,7 @@
 In the Cargo.toml file
 
     [dependancies]
-    simple_getopt = "0.1.0"
+    simple_getopt = "0.2.0"
 
 In the main.rs file
 
@@ -23,7 +23,7 @@ use simple_getopt::Getopt;
 
 `simple_getopt` - Parse options on command line by breaking up each of the options for easy usage. This crate easily parse the CLI options and get out of the way of the user.
 
-`simple_getopt` returns a rust hash-map wrapped in a read-only implementation. All options given from the CLI are in two categories: 
+`simple_getopt` returns a rust hash-map wrapped in a read-only implementation. All options given from the CLI are in two categories:
 
 1. flag/switches without an attached values. These are seen as a `boolean` values.
 2. options that has values attached. These can be used as HashMap regular key/value.
@@ -40,7 +40,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
         // using the following from the CLI
         // cargo run -- -a=[1, 2, 3, 4, 5] -b=[6, 7, 8, 9, 10] -c=[11, 12, 13]
         fn main() {
-            // All you need. CLI options parsed there. 
+            // All you need. CLI options parsed there.
             let parser = Getopt::std(&std::env::args().collect::<Vec<_>>());
 
             for val in ["a", "b", "c"].iter() {
@@ -83,7 +83,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
     let parse = Getopt::std(&env::args().collect::<Vec<_>>()); // parsing done.
 
     // print all keys and values
-    println!("{}, {}", parse.get_keys(), parse.get_values()); 
+    println!("{}, {}", parse.get_keys(), parse.get_values());
 
     // cargo run -- -x=12 -y=24
     println!(
@@ -101,9 +101,9 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
 
 ### Simple-Getopt Methods
 
-`simple_getopt` returns a read-only hashmap implementation. So, to use the following functions are provided:  
+`simple_getopt` returns a read-only hashmap implementation. So, to use the following functions are provided:
 
-1. std 
+1. std
 
     > **_pub fn std(arr: &[String]) -> Getopt_**
     >
@@ -138,7 +138,7 @@ It should be emphasised that `simple_getopt` job is to parse (i.e break up nicel
     > - It returns a boolean value of either false or true, if the key supplied is contained as key in the getopt's returned instance for all the CLI options given.
 
 
-### Limitation by Design  
+### Limitation by Design
 Since simplicity is the core of this crate design, the following design options are followed:
 
 1. The flags or switches are single lettered and uses a single dash like so: `-a` `-b` `-c`. The user cannot use double dashes or more than one letter as flags. i.e `--file` not allowed.
